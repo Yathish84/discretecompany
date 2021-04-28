@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c36903a2a0.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header__logo">
+            <img src="./images/logo.png" class="header__logo__design"></img>
+            <div class="header__first">
+                <p class="header__dis">Discrete</p>
+                <p class="header__convo">Conversation</p>
+            </div>
+        </div>
+        <div class="header__user">
+            <p class="header__bnj">🍔 Break</p>
+            <p  class="header__bnj"><i class="far fa-bell"></i></p>
+            <p class="header__bn" ><i class="fas fa-user-circle"></i> &nbsp; John Doe</p>
+            
+        </div>
+    </div>
+    <div class="dashboard">
+        <nav>
+        <ul id="nav" class="nav">
+            <li >
+              <a class="smoothscroll" href="#"><i class="fas fa-th-large"></i>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a class="smoothscroll" href="#"><i class="fas fa-file-alt"></i>
+                Reports
+              </a>
+            </li>
+            
+            <li class="current">
+              <a class="smoothscroll" href="#"><i class="fas fa-cog"></i>
+                Settings
+              </a>
+            </li>
+           
+            <li>
+              <a class="smoothscroll" href="#"><i class="fas fa-chart-line"></i>
+                Statistics
+              </a>
+            </li>
+          </ul>
+        </nav>
+    </div>
+    <div class="lastnavv">
+        <ul id="navv" class="finalnav">
+            <li>
+              <a class="lastnav" href="#">
+                General
+              </a>
+            </li>
+            <li class="active">
+              <a class="lastnav" href="#">
+                Widget
+              </a>
+            </li>
+            
+            <li>
+              <a class="lastnav" href="#">
+                Privacy
+              </a>
+            </li>
+           
+            <li>
+              <a class="lastnav" href>
+                Rules
+              </a>
+            </li>
+            <li >
+                <a class="lastnav" href="#">
+                  User
+                </a>
+              </li>
+              <li>
+                <a class="lastnav" href="#">
+                  Teams
+                </a>
+              </li>
+              
+              <li>
+                <a class="lastnav" href="#">
+                  Skills
+                </a>
+              </li>
+             
+              <li>
+                <a class="lastnav" href>
+                  library
+                </a>
+              </li>
+              <li>
+                <a class="lastnav" href>
+                  Account
+                </a>
+              </li>
+          </ul>
+    </div>
+    <div class="main">
+        <div class="select">
+            <div class="select__org">
+                <label for="org">Select Organization</label>
+                <select id="org" class="select__option">
+                    <option value="" selected disabled hidden>Select Here</option>
+                    <option value="org 1">org 1</option>
+                    <option value="org 2">org 2</option>
+                    <option value="org 3">org 3</option>
+                  </select>
+            </div>
+            <div class="select__style">
+                <label for="wid">Widget Style</label>
+                <select id="wid" class="select__option">
+                    <option value="" selected disabled hidden>Select Here</option>
+                    <option value="wid 1">wid 1</option>
+                    <option value="wid 2">wid 2</option>
+                    <option value="wid 3">wid 3</option>
+                  </select>
+            </div>
+        </div>
+       
+        <div class="controls">
+            <div class="controls__names">
+                <div class="controls__widget">
+                    <h1 id="h1" class="controls__value">Widget Control</h1>
+                    <div class="controls__value">
+                        <label for="res">Allow widget Resize</label>
+                        <p>Yes
+                            <input value="Allow widget Resize" id="check" class="input" type="checkbox" onclick=clickk(this.value) >
+                            No
+                        </p>
+                        
+                    </div>
+                    <div class="controls__value">
+                        <label for="res">Show Maximum Button</label>
+                        <p>Yes 
+                            <input value="Show Maximum Button" type="checkbox"  id="check" onclick=clickk(this.value)>
+                            No
+                        </p>
+                       
+                        
+                    </div>
+                    <div class="controls__value">
+                        <label for="res">Show Minimize Button?</label>
+                        <p class="p">Yes
+                            <input value=" Show Minimize Button?" type="checkbox" id="check" onclick=clickk(this.value)>
+                            No
+                        </p>
+                        
+                    </div>
+                    <div class="controls__value">
+                        <label for="res">Show Popout Button</label>
+                        <p>Yes
+                            <input value="Show Popout Button " type="checkbox"  id="check" onclick=clickk(this.value)>
+                            No
+                        </p>
+                        
+                    </div>
+                    <div class="controls__valuee">
+                        <label for="opt">Widget Animation ?</label>
+                        <select id="opt" class="select__opt">
+                            <option value="" selected disabled hidden>Select Here</option>
+                            <option value="animation 1">animation 1</option>
+                            <option value="animation 2">animation 2</option>
+                            <option value="animation 3">animation 3</option>
+                          </select>
+                    </div>
+
+                </div>
+                <div class="controls__settings">
+                    <h1 id="h1" class="controls__value">Widget Icon Setting</h1>
+                    <div class="controls__valuee">
+                     <label for="opt">Widget Icon Location ?</label>
+                      <select id="opt" class="select__opt">
+                        <option value="" selected disabled hidden>Select Here</option>
+                        <option value="animation 1">animation 1</option>
+                        <option value="animation 2">animation 2</option>
+                        <option value="animation 3">animation 3</option>
+                      </select>
+                    </div>
+                    <div class="controls__value">
+                      <label for="res">Show Maximum Button</label>
+                        <p>Yes
+                         <input value="Show Maximum Button" type="checkbox"  id="check" onclick=clickk(this.value)>
+                          No
+                        </p>  
+                      </div>
+                    <div class="controls__val">
+                      <label for="opt">Select Graphic File ?</label>
+                      <select id="opt" class="select__opt">
+                          <option value="" selected disabled hidden>Select Here</option>
+                          <option value="file 1">file 1</option>
+                          <option value="file 2">file 2</option>
+                          <option value="file 3">file 3</option>
+                        </select>
+                        <button class="setting__btn">OR SELECT FILE</button>
+                      </div>
+                    </div>
+              </div>
+            <div class="chat">
+                <div class="chat__header">
+                    <div class="chat__name">
+                      <h5 id="name">Martin</h5>
+                      <div class="chat__dot"> 
+                        <img class="dotimg" src="./images/dot.png">
+                      <h6> Online</h6>
+                    </div>
+                    </div>
+                    <div class="chat__icons">
+                      <i id="i" class="fas fa-ellipsis-h"></i>
+                      <i id="i" class="far fa-clock"></i>
+                      <i id="i" class="fas fa-minus"></i>
+                      <i id="i" class="fas fa-times"></i>
+                    </div>
+
+                </div>
+                <div class="chat__msgs">
+                    <div class="chat__pink">
+                      <div class="chat__time">
+                        <p class="msgs__name">Martin</p>
+                        <p class="msgs__time">2.56 pm</p>
+                      </div>
+                        <p class="msgs__pink">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                    </div>
+                    <div class="chat__white">
+                      <div class="chat__time second">
+                        <p class="msgs__name">John</p>
+                        <p class="msgs__time">2.56 pm</p>
+                      </div>
+                        <p class="msgs__pink" id="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                    </div>
+                     line with unread
+
+                    <div class="chat__pink">
+                      <div class="chat__time">
+                        <p class="msgs__name">Martin</p>
+                        <p class="msgs__time">2.56 pm</p>
+                      </div>
+                        <p class="msgs__pink">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                      </div>
+                      <div class="chat__input">
+                        <i class="fas fa-ellipsis-v" id="dots"></i>
+                        <input class="chat__textbox" type="text" >
+                        <i class="far fa-paper-plane" id="send"></i>
+                      </div>
+            </div>
+            <div class="chat__btns">
+              <button onclick="cancel()" class="chat__cancel " id="chat__btn">CANCEL CHANGES</button>
+              <button class="chat__cancel">SAVE AND APPLY</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
